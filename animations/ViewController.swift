@@ -16,6 +16,13 @@ class ViewController: UIViewController {
     }
 
     @IBAction func showAnimation(_ sender: Any) {
+
+    }
+    
+    
+    
+    // Use Lotanimation Framework
+    func lotanimation(){
         let animationView = LOTAnimationView.init(name: "PinJump")
         animationView?.frame = CGRect(x: 0, y: 100, width: self.view.frame.size.width, height: 250)
         animationView?.contentMode = .scaleAspectFit
@@ -26,6 +33,7 @@ class ViewController: UIViewController {
             print("finished!!")
         })
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
